@@ -24,6 +24,10 @@ $(call inherit-product, device/oneplus/dumpling/device.mk)
 # Inherit some common exTHmUI stuff.
 $(call inherit-product, vendor/exthm/config/common_full_phone.mk)
 
+# EXTHMUI GAPPS
+EXTHM_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+
 PRODUCT_NAME := exthm_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
